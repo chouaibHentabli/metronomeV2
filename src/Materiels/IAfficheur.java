@@ -1,7 +1,7 @@
 package Materiels;
 
 /**
- * Created by irifi on 04/01/17.
+ * Created by irifi on 04/01/17.   
  */
 public interface IAfficheur {
     public void setAfficheur(String value);

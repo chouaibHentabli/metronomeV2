@@ -3,7 +3,7 @@ package Materiels;
 import java.util.Scanner;
 
 /**
- * Created by irifi on 04/01/17.
+ * Created by irifi on 04/01/17.   
  */
 public class ClavierImpl implements Clavier {
     int clickedButton=-1;
