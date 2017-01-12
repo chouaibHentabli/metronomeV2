@@ -7,7 +7,7 @@ import ihm.Sonor;
  */
 public class SonorTic implements Command {
 
-    private String pathMedia = "/home/chouaib/IdeaProjects/MetronomeV2/src/resources/tic.wav";
+    private String pathMedia = "/home/chouaib/IdeaProjects/metronomeV2/src/resources/tic.wav";
     private Sonor sonor;
 
     public SonorTic(Sonor sonor) {

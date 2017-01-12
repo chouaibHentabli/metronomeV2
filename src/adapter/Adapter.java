@@ -19,9 +19,9 @@ public class Adapter implements IAdapter {
     public Adapter(IMateriel materiel, Controller controller) {
         this.materiel = materiel;
         this.controller = controller;
-        CheckedButton = new CheckedButton(this);
+        checkedButton = new CheckedButton(this);
         System.out.println("");
-        horloge.activerPeriodiquement(CheckedButton, 337);
+        horloge.activerPeriodiquement(checkedButton, 337);
     }
 
 
