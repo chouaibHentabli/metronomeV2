@@ -5,10 +5,12 @@ import controller.Controller;
 import horloge.Horloge;
 import horloge.IHorloge;
 
+import java.util.Observable;
+
 /**
  * Created by chouaib on 30/12/16.
  */
-public class Engine implements IEngine {
+public class Engine extends Observable implements IEngine {
 
     //default value 120
     private int tempo = 120;

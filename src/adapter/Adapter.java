@@ -1,6 +1,6 @@
 package adapter;
 
-import command.CheckedButton;
+import command.Poll;
 import controller.Controller;
 import horloge.*;
 import Materiels.IMateriel;
@@ -12,21 +12,21 @@ public class Adapter implements IAdapter {
 
     private int mouletteOldValue = 120;
     private Controller controller;
-    private CheckedButton checkedButton;
+    private Poll poll;
     private IHorloge horloge = new Horloge();
     private IMateriel materiel;
 
     public Adapter(IMateriel materiel, Controller controller) {
         this.materiel = materiel;
         this.controller = controller;
-        checkedButton = new CheckedButton(this);
+        this.poll = new Poll(this);
         System.out.println("");
-        horloge.activerPeriodiquement(checkedButton, 337);
+        horloge.activerPeriodiquement(poll, 337);
     }
 
 
     @Override
-    public void getCheckedButton() {
+    public void poll() {
         switch (materiel.getClavier().touchepressee()) {
             case 1:
                 controller.start();

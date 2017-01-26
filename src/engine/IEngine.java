@@ -1,9 +1,11 @@
 package engine;
 
+import java.util.Observable;
+
 /**
  * Created by chouaib on 30/12/16.
  */
-public interface IEngine {
+public interface IEngine  {
 
     /**
      * @return Flapping by minute

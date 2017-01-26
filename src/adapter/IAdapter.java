@@ -7,5 +7,5 @@ public interface IAdapter {
     /**
      * Check if a button has been clicked
      */
-    public void getCheckedButton();
+    public void poll();
 }
